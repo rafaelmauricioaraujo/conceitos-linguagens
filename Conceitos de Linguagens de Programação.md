@@ -167,8 +167,30 @@ O interesse em IA se intensificou, as grandes áreas que estavam interessadas se
 Descrição da sintaxe e da semantica.
 
 #### 3.1 INTRODUÇÃO
+A descrição de uma linguagem influencia de maneira importante o sucesso dela.
+
+Um dos problemas de descrever uma linguagem é a diversidade de pessoas que precisam entender a descrição.
+
+O estudo de uma linguagem, como o estudo de lingugens naturais, pode ser dividido em exames acerca da sintaxe e da semântica.
+
+a **sintaxe** é a forma das suas expressões, sentenças e unidades de programa. 
+sua **semântica** é o significado dessas expressões.
+
+por exemplo:
+```java
+
+while(expressao_booleanda) {
+	sentença
+}
+
+```
+
+**sintaxe e semântica são muito relacionadas, isto é, a aparência de uma sentença deve sugerir o que ela realiza.**
+
 
 #### 3.2 O PROBLEMA DE ESCREVER SINTAXE
+
+
 
 #### 3.3 MÉTODOS FORMAIS DE DESCREVER SINTAXE
 
