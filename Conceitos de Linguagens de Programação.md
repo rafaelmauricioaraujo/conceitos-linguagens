@@ -190,7 +190,39 @@ while(expressao_booleanda) {
 
 #### 3.2 O PROBLEMA DE ESCREVER SINTAXE
 
+Uma linguagem natural como o português ou artificial como java é um conjunto de cadeias de caracteres formadas a partir de um alfabeto. Essas cadeias são chamadas de **sentenças**. As regras sintáticas de uma linguagem especificam quais cadeias de caracteres formadas a partir deste alfabeto estão na linguagem. 
 
+Essas penquenas unidades são chamadas de **lexemas**. É possível pensar em um programa como uma cadeia de **lexemas** ao invés de caracteres. 
+
+Os **lexemas** são divididos em grupos, como _identificadores_, _literais_, _sinais_ _de_ _operação_ etc.
+
+cada grupo é representado por um nome ou _token_
+
+por exemplo a sentença:
+
+```java
+index = 2 * count + 17;
+```
+
+| Lexemas | Token |
+|---------|-------|
+|`index`|identificador|
+|`=`|sinal_de_igualdade|
+|`2`|literal_inteiro|
+|`*`|operador_multiplicação|
+|`count`|identificador|
+|`+`|operador_adição|
+|`17`|literal_inteiro|
+|`;`|ponto e virgula|
+
+
+
+-	#### 3.2.1 Reconhecedores de Linguagens
+	Em geral, linguagens podem ser formalmente definidas de duas maneiras: **reconhecimento** e **geração**
+
+	Suponha que exista uma linguagem `L` que utiliza um conjunto de caracteres do alfabeto `£` o método de reconhecimento consiste em contruir um mecanismo `R` que seja capaz de ler cadeias de caracteres do alfabeto `£` e indicar se tal cadeia está ou não em `L`.
+
+	Parta da análise sintática de um compilador é um reconhecedor para a linguagem que o compilador traduz.
 
 #### 3.3 MÉTODOS FORMAIS DE DESCREVER SINTAXE
 
