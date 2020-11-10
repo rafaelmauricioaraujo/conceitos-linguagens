@@ -159,6 +159,19 @@ O interesse em IA se intensificou, as grandes áreas que estavam interessadas se
 	- Psicologia: modelos de armazenamentos e recuperação de informações
 	- Matemática: Mecanizar processos inteligentes, como prova de teoremas.
 
+## Capítulo incompleto
 
 
 
+## Capitulo 3 ##
+Descrição da sintaxe e da semantica.
+
+#### 3.1 INTRODUÇÃO
+
+#### 3.2 O PROBLEMA DE ESCREVER SINTAXE
+
+#### 3.3 MÉTODOS FORMAIS DE DESCREVER SINTAXE
+
+#### 3.4 GRAMÁTICA DE ATRIBUTOS
+
+#### 3.5 SEMÂNTICA DINÂMICA
