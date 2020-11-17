@@ -240,6 +240,21 @@ Mecanismos formais de geração de linguagens, geralmente chamdos de **gramátic
 	
 	- Fundamentos
 		Uma **metalingugaem** é uma linguagem para descrever outra. a **BNF** (Forma de Backus-Naur) é uma metalinguagem.
+		A BNF usa abstrações para as estruturas sintáticas, um exemplo:
+
+		```
+		<assign> --> <var> = <expression>
+		```
+
+		esta regra especifica que a abstração ```<assign>``` é definida como uma instância da abstração ```<var>```, seguida pelo lexema ```=``` seguida por uma instância da abstração ```<expression>```
+
+		uma sentença de exemplo seria
+
+		```
+		total = subtotal1 + subtotal2
+		```
+
+		
 
 
 #### 3.4 GRAMÁTICA DE ATRIBUTOS
