@@ -222,9 +222,25 @@ index = 2 * count + 17;
 
 	Suponha que exista uma linguagem `L` que utiliza um conjunto de caracteres do alfabeto `£` o método de reconhecimento consiste em contruir um mecanismo `R` que seja capaz de ler cadeias de caracteres do alfabeto `£` e indicar se tal cadeia está ou não em `L`.
 
-	Parta da análise sintática de um compilador é um reconhecedor para a linguagem que o compilador traduz.
+	Parte da análise sintática de um compilador é um reconhecedor para a linguagem que o compilador traduz.
+-	#### 3.2.1 Geradores de Linguagens
+	Um gerador de linguagem é um dispositivo usado para gerar as senteças de uma linguagem. Podemos pensar em um gerador com um botão que produz uma sentençada lingaugem cada vez que é pressionado.
+
 
 #### 3.3 MÉTODOS FORMAIS DE DESCREVER SINTAXE
+Mecanismos formais de geração de linguagens, geralmente chamdos de **gramáticas**
+
+-	#### 3.2.1 Geradores de Linguagens
+	Forma de Backus-Naur e gramáticas livres de contexto
+		
+	- Gramáticas livres de contexto
+		Noam Chomsky, um linguísta notável descreveu quatro classes de dispositivos geradores, ou gramáticas, que definem quatro classes de linguagens. Duas dessas classes, _lives_ _de_ _contexto_ e _regulares_ foram úteis para descrever a sintaxe linguagens de programação.
+
+		A forma _token_ das linguagens pode ser descrita por expressões regulares e a sintaxe, na maioria das vezes, podem ser descritas por gramáticas livres de contexto.
+	
+	- Fundamentos
+		Uma **metalingugaem** é uma linguagem para descrever outra. a **BNF** (Forma de Backus-Naur) é uma metalinguagem.
+
 
 #### 3.4 GRAMÁTICA DE ATRIBUTOS
 
