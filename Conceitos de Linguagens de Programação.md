@@ -228,17 +228,19 @@ index = 2 * count + 17;
 
 
 #### 3.3 MÉTODOS FORMAIS DE DESCREVER SINTAXE
-Mecanismos formais de geração de linguagens, geralmente chamdos de **gramáticas**
+Mecanismos formais de geração de linguagens, geralmente chamados de **gramáticas**
 
 -	#### 3.2.1 Geradores de Linguagens
 	Forma de Backus-Naur e gramáticas livres de contexto
 		
 	- Gramáticas livres de contexto
+
 		Noam Chomsky, um linguísta notável descreveu quatro classes de dispositivos geradores, ou gramáticas, que definem quatro classes de linguagens. Duas dessas classes, _lives_ _de_ _contexto_ e _regulares_ foram úteis para descrever a sintaxe linguagens de programação.
 
 		A forma _token_ das linguagens pode ser descrita por expressões regulares e a sintaxe, na maioria das vezes, podem ser descritas por gramáticas livres de contexto.
 	
 	- Fundamentos
+
 		Uma **metalingugaem** é uma linguagem para descrever outra. a **BNF** (Forma de Backus-Naur) é uma metalinguagem.
 		A BNF usa abstrações para as estruturas sintáticas, um exemplo:
 
@@ -254,7 +256,53 @@ Mecanismos formais de geração de linguagens, geralmente chamdos de **gramátic
 		total = subtotal1 + subtotal2
 		```
 
+		Para a definição de listas, a **BNF** utiliza **recursão**.
+
+		```
+		<ident_list> --> identifier
+					   | identifier, <ident_list>
+		```
+		Essa regra define uma lista de identificadores como um token isolado (identificador) ou um identificador seguido por vírgula e outra instância de ```<ident_list>```
+
+		Exemplo de uma gramática para atribuição simples
+		```
+
+		<assign> --> <id> = <expr>
+		<id> --> A|B|C
+		<expr> --> <id> + <expr>
+				|<id> * <expr>
+				|(<expr>)
+				|<id>
+
+		```
+
+		A sentença ``` A = B * (A + C) ``` é gerada pela derivação: (derivação mais a esquerda)
+
+		```
+		<assign> --> <id> = <expr>
+				 --> A = <expr>
+				 --> A = <id> * <expr>
+				 --> A = B * <expr>
+				 --> A = B * (<expr>)
+				 --> A = B * (<id> + <expr>)
+				 --> A = B * ( A + <expr>)
+				 --> A = B * (A + <id>)
+				 --> A = B * (A + C)
+		```
+
+	- Árvores de análise sintática
 		
+		Um dos dos recursos mais atraentes das linguagens é que elas descrevem naturalmente a estrutura hierárquica estática das linguagens que definem. Estas estruturas são chamados de árvores de análise sintática (_parse_ _tres_)
+
+		
+		![parse_tree](https://bn1302files.storage.live.com/y4mmqrxlHPi8bGqzXmRVixDgZH77exUQ1yC9Dvis-qJxTvbDBWb8U6zlUCxns7th82j95QHwkww69zzQDFBbIXRUEDe_-M_KMDuJuvVrl7jTfUjco7n57Ee5XUobJuYXTXVmBQFQbd3tQvwvyZlmEQmO0B22Krj4mQRncKGxWgPvU0anpwDRJOAWwtIX1hlr6oE?width=851&height=460&cropmode=none)
+
+		Quando uma gramática gera uma forma setencial para a qual existem duas ou mais árvores, é dita ambígua. Isso pode gerar problemas para os compiladores.
+
+		Algumas forma de remover a ambiguidade consiste em definir regras como ordem de precedência de operadores, regras de associativade.
+
+
+
 
 
 #### 3.4 GRAMÁTICA DE ATRIBUTOS
