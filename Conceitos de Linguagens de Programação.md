@@ -301,7 +301,8 @@ Mecanismos formais de geração de linguagens, geralmente chamados de **gramáti
 
 		Algumas forma de remover a ambiguidade consiste em definir regras como ordem de precedência de operadores, regras de associativade.
 
-
+		Existem também extensões da BNF, mais de uma, geralmente
+		chamadas de EBNF que determinam regras melhoras para descrições de linguagens geralmente fazendo uso de chaves, parenteses, colchetes chamados de **metasimbolos** para descrever de forma mais objetiva determinadas caracteristicas de linguagens.
 
 
 
